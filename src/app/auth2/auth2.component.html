@@ -1,0 +1,14 @@
+<div>
+  <h1 style="text-align: center;">Totoro</h1>
+  <h3 style="text-align: center;">На ваш email выслан код для подтверждения</h3>
+  <div style="margin-left: 42%;">
+    <label>Введите код </label> 
+    
+    <input type="text" [(ngModel)]="inputCode"> 
+    <br>
+    <input type="button" value="Подтвердить" class = "btn btn-info" style="margin-left: 60px;" (click)="click()">
+    <br>
+    <label *ngIf="falseCode" style="color: red;"> Вы ввели неверный код</label>
+  </div>
+
+</div>

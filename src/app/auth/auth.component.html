@@ -1,0 +1,16 @@
+<div>
+  <h1 style="text-align: center;">Totoro</h1>
+  <div style="margin-left: 42%;">
+    <label>Логин</label> 
+    
+    <input type="text" [(ngModel)]="inputLogin"> 
+    <br>
+    <label>Пароль</label>
+    <input type="text" [(ngModel)]="inputPassword">
+    <br>
+    <input type="button" value="Войти" class = "btn btn-info" style="margin-left: 60px;" (click)="click()">
+    <br>
+    <label *ngIf="falsePassword" style="color: red;"> Вы ввели неверный логин или пароль</label>
+  </div>
+
+</div>
